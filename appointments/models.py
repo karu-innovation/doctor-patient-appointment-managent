@@ -22,7 +22,7 @@ class Appointment(models.Model):
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     patient = models.ForeignKey(Account, on_delete=models.CASCADE, null=True, blank=True, related_name='patient')
     doctor = models.ForeignKey(Account, on_delete=models.CASCADE, null=True, blank=True, related_name='appointment_doctor')
-    time_slot = models.IntegerField(choices=time_slot, null=True, blank=True)
+    time_slot = model   s.IntegerField(choices=time_slot, null=True, blank=True)
     
 
 
